@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UrnaEletronica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button class = "reloadUrna" onclick="window.location.reload()">Reiniciar Votação</button>
+
+<div class="urna">
+
+    <div class="storage">
+       <button type="submit" class="link"><a class="internalLink" href="Result.html" target="_blank" rel="next">Resultados Parciais</a></button>
+
+    </div>
+    <div class="screen">
+        <div class="div1">
+            <div class="div1-left">
+                <div class="left1">
+                    <span>SEU VOTO PARA</span>
+                </div>
+                <div class="left2">
+                    <span>VEREADOR</span>
+                </div>
+                <div class="numberBox">
+                    <div class="square focus"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="informations">
+                    Nome: blalv <br/>
+                    partido: fsakfsa <br/>
+                    vice-prefeito: ffff <br/>
+                </div>
+            </div>
+            <div class="div1-right">
+                <div class="right1">
+                    <img src="candidato01.jpg" alt=""/>
+                    Prefeito
+                </div>
+                <div class="right1 small">
+                    <img src="candidato02.jpg" alt=""/>
+                    Vice-Prefeito
+                </div>
+            </div>
+        </div>
+
+        <div class="div2">
+            Aperte a tecla: <br>
+            VERDE &emsp;&emsp;para CONFIRMAR este voto
+            <br>
+            LARANJA &emsp;para REINICIAR este voto
+
+
+    </div>
+    </div>
+    <div class="keyboard">
+        <div class="keyboard-row">
+            <div class="keyboard-button" onclick="clicou(1)">1</div>
+            <div class="keyboard-button" onclick="clicou(2)">2</div>
+            <div class="keyboard-button" onclick="clicou(3)">3</div>
+        </div>
+        <div class="keyboard-row">
+            <div class="keyboard-button" onclick="clicou(4)">4</div>
+            <div class="keyboard-button" onclick="clicou(5)">5</div>
+            <div class="keyboard-button" onclick="clicou(6)">6</div>
+        </div>
+
+        <div class="keyboard-row">
+            <div class="keyboard-button" onclick="clicou(7)">7</div>
+            <div class="keyboard-button" onclick="clicou(8)">8</div>
+            <div class="keyboard-button" onclick="clicou(9)">9</div>
+        </div>
+
+        <div class="keyboard-row">
+            <div class="keyboard-button" onclick="clicou(0)">0</div>
+        </div>
+        <div class="keyboard-row">
+            <div class="keyboard-button white" onclick="branco()">BRANCO</div>
+            <div class="keyboard-button correct" onclick="corrige()">CORRIGE</div>
+            <div class="keyboard-button confirm" onclick="confirma()">CONFIRMA</div>
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+<script src="etapas.js"></script>
+<script src="UrnaEletronica.js"></script>
+<script>startStage()</script>
+
+</body>
+</html>
